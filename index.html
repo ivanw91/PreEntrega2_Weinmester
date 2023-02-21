@@ -15,87 +15,54 @@
 <body>
     <div id="grid_container">
         <section class="grid_area1">
-            <header>
-                <div>
-                    <div class="logo_index">
-                        <a href="./index.html"><img class="logo_argentino" src="./img/logo.jpg" alt="Logo Argentino">
-                    </div>
-                    <nav>
-                        <ul id="grid_container2" class="nav">
-                        <li><a class="link" href="./pages/carta.html">Carta</a></li>
-                            <li><a class="link" href="./pages/galeria.html">Galeria</a></li>
-                            <li class="reserva" class="anchor"><a class="link"
-                                    href="https://api.whatsapp.com/send?phone=+34665689489&text=Hola!%20quisiera%20hacer%20una%20reserva:%10D%C3%ADa:%09Hora:%09Comensales%20(adultos%20y%20ni%C3%B1os):%09Alergias:"><img
-                                        class="logo_wasap" src="./img/Whatsapp_.png" alt="Reserva">Reserva</a></li>
-                            <li><a class="link" href="./pages/Sugerencias.html">Sugerencias</a></li>
-                            <li><a class="link" href="./pages/contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
+            <header >
+                <div class="logo_index container-fluid">
+                    <a href="./index.html"><img class="logo_argentino" src="./img/logo.jpg" alt="Logo Argentino">
                 </div>
+                <div>
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid flex-row-reverse" >
+                            <a class="navbar-brand" href="#"><strong>Bienvenidos</strong></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./pages/carta.html">Carta</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://api.whatsapp.com/send?phone=+34665689489&text=Hola!%20quisiera%20hacer%20una%20reserva:%10D%C3%ADa:%09Hora:%09Comensales%20(adultos%20y%20ni%C3%B1os):%09Alergias:"><img
+                                            class="icon_wasap" src="./img/Whatsapp_.png" alt="Reserva">Reserva</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./pages/Sugerencias.html">Sugerencias</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div> 
             </header>
         </section>
-        <!-- Video Parrilla -->
-        <!-- <section class="video grid_area2">
-            <div>
-                <iframe class="video_parrilla"
-                    src="https://www.youtube.com/embed/avgYlArVY3M?controls=0&amp;start=69&end=96&mute=1&showinfo=0&autoplay=1&loop=1"
-                    title="YouTube video player"></iframe>
-            </div>
-        </section> -->
 
-        <!-- Reviews -->
-        <section class="grid_area3">
-            <main>
-                <div class="reviews_logo .container">
-                    <div class="logo_google col-sm-6" >
-                        <img class="img_google" src="./img/google.jpg" alt="Google">
-                    </div>
-                    <div class="col-sm-6 .container">
-                            <p class="exelente">EXELENTE</p>
-                            <p>A base de 697 evaluaciones</p>                                         
-                    </div>
-                    <div> 
-                        <h1>La opinion de nuestros clientes</h1>
-                    </div>
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./img/rev_jorge.png" alt="Review Rev_jorge" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/rev_justo.png" alt="Rev_justo" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/rev_diego.png" alt="Rev_diego" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/rev_emi.png" alt="rev_emi" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/rev_juan.png" alt="rev_juan" class="d-block w-100">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
-                </div> 
-            </main>
-        </Section>
         <!-- Mapa, horarios y reserva -->
-        <section class="mapa_horarios grid_area4">
+        <section class="mapa_horarios grid_area2">
             <div class="horarios">
                 <h3>Horarios</h3>
                 <ul class="list_time">
-                    <li class="aviso"><strong>Siempre es mejor reservar:</strong></li>
+                    <li class="aviso"><strong><cursive>¡Siempre es mejor reservar!</cursive></strong></li>
                     <li><strong>Miércoles a Domingo:</strong> 12:00 a 17:00</li>
                     <li><strong>Lunes y martes: </strong>
                         <p>Cerrado normalmente pero en festivos abrimos,<br> por favor consultar!</p>
@@ -106,25 +73,28 @@
             <div class="escribenos">
                 <p>Escríbenos por Whatsapp que es mas rápido!
                     Desde "Reserva" lo haces automático.</p>
-                <div>
+                <div >
                     <a class="link" class="reserva"
                         href="https://api.whatsapp.com/send?phone=+34665689489&text=Hola!%20quisiera%20hacer%20una%20reserva:%10D%C3%ADa:%09Hora:%09Comensales%20(adultos%20y%20ni%C3%B1os):%09Alergias:"><img
                             class="logo_reserva" src="./img/Whatsapp_.png" alt="reserva">Reserva</a>
                 </div>
             </div>
-            <div class="map_place">
+            <div class="map_place container-fluid">
                 <h3 class="place">¿Donde Estamos?</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12065.643156656011!2d-4.025572294246873!3d40.88480306829288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd416a7d4ac841c7%3A0x8cf0a13514dd3caf!2sEl%20Argentino%20de%20Valsa%C3%ADn!5e0!3m2!1ses-419!2ses!4v1676934817728!5m2!1ses-419!2ses"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="mapa .container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48267.17989515178!2d-4.02742!3d40.878485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8cf0a13514dd3caf!2sEl%20Argentino%20de%20Valsa%C3%ADn!5e0!3m2!1ses-419!2ses!4v1677012941160!5m2!1ses-419!2ses"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
-        <footer>
+        <footer class="grid_area3">
             <div class="socialn">
-                <a href="https://www.facebook.com"><img class="redes" src="./img/Facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/"><img class="redes" src="./img/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com"><img class="sn_icon" src="./img/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img class="sn_icon" src="./img/instagram.png" alt="instagram"></a>
             </div>
+            <div><h6>© 2023 by Ivan Weinmester. All rights reserved.</h6></div>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
