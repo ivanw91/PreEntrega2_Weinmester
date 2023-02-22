@@ -162,3 +162,55 @@ footer div h6 {
     
   }
 }
+
+/* ESTILOS CARTA */
+
+.container_carta {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  grid-template-areas:
+    "Nav_bar"
+    "carta_s1"
+    "carta_s2"
+    "carta_s3"
+    "carta_s4"
+    "carta_s5"
+    "carta_s6"
+    "footer";
+}
+
+.Nav_bar { grid-area: Nav_bar; }
+
+.carta_s1 { grid-area: carta_s1; }
+
+.carta_s2 { grid-area: carta_s2; }
+
+.carta_s3 { grid-area: carta_s3; }
+
+.carta_s4 { grid-area: carta_s4; }
+
+.carta_s5 { grid-area: carta_s5; }
+
+.carta_s6 { grid-area: carta_s6; }
+
+.footer { grid-area: footer; }
+
+
+h2, h3, h4, li {
+  
+  text-align: center;
+  ;
+}
+.Nav_bar {
+  height: 50%;
+}
+.text_menu {
+  color: white;
+  background-color: #0d0d0dba ;
+}
+.Nav_bar {
+  margin-bottom: 0px;}
+  
