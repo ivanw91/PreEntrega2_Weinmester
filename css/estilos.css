@@ -29,10 +29,14 @@ body {
 }
 
 /* Navbar */
+
 .container-fluid.flex-row-reverse {
   justify-content: center;
-  margin-right: 5px;
+  padding:0
 }
+
+
+.container-fluid.flex-row-reverse {}
 .nav-item {
   margin: 5px;
   font-size: 25px;
@@ -48,9 +52,16 @@ a {
   color: rgb(0, 0, 0);
   font-size: 35px;
 }
-/* Logo */
-.logo_argentino {
-  width: 100%;
+.logo_container {
+  width: 300px;
+}
+
+
+/* Flex */
+.d-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Style text */
 p {
@@ -136,11 +147,13 @@ footer div h6 {
   margin: 15px;
   height: 45px;
 }
+
 @media (min-width: 768px) {
-  .logo_argentino {
-    display: none;
-  } 
+
+
   .navbar-brand  {
-    display: none;
+    height: 50%;
+    width: 50%;
+    
   }
 }
