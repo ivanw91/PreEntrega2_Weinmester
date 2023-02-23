@@ -51,11 +51,27 @@
         </nav>
     </header>
     <main>
-        <h2 class="bg_shadow text_menu">Deja tu sugerencia anonima</h2>
-        <div class=".container col-6 mb-3 d-flex">
-            <label for="exampleFormControlTextarea1" class="form-label h2 bg_shadow text_menu">Tu sugerencia</label>
-            <textarea class="form-control h2 class="bg_shadow text_menu" id="exampleFormControlTextarea1" rows="3">Tu sugerencia</textarea>
+        <div>
+
+            <form action="#" method="post">
+                <h2>Dejanos tus Sugerencias</h2>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="sugerencia">Sugerencia:</label>
+                    <textarea id="sugerencia" name="sugerencia" required></textarea>
+                </div>
+                <button type="submit">Enviar sugerencia</button>
+            </form>
+
         </div>
+
     </main>
     <footer class="footer">
         <div class="socialn">

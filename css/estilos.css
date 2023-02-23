@@ -3,8 +3,6 @@
   margin: 0;
   margin-bottom: 0;
   padding: 0;
-  /* overflow-x: hidden !important; */
-  /* border: solid 1px; */
 }
 body {
   margin: 0;
@@ -17,7 +15,8 @@ body {
   grid-template-areas:
     "section_1"
     "section_2"
-    "section_3";
+    "section_3"
+    ;
 }
 .grid_area1 {
   grid-area: section_1;
@@ -33,14 +32,13 @@ body {
 
 .container-fluid.flex-row-reverse {
   justify-content: center;
-  padding:0
+  padding: 0;
 }
-
 
 .nav-link {
   text-align: center;
   margin: 5px;
-  padding:  5px;
+  padding: 5px;
   font-size: 1.8rem;
   font-weight: 600;
 }
@@ -59,9 +57,8 @@ a {
   border-radius: 50px;
 }
 
-
 /* Flex */
-.d-flex{
+.d-flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +117,7 @@ div.escribenos p {
   text-align: center;
 }
 section {
-  width: 100vw;
+  /* width: 100vw; */
 }
 /* Contenedor img wsp reserva */
 img.logo_reserva {
@@ -137,6 +134,7 @@ h3.place {
   font-weight: 400;
   text-align: center;
 }
+
 /* Footer */
 footer {
   background-color: black;
@@ -155,13 +153,11 @@ footer div h6 {
 }
 
 @media (min-width: 768px) {
-
-
-  .navbar-brand  {
+  .navbar-brand {
     height: 50%;
     width: 50%;
-    
   }
+
 }
 
 /* ESTILOS CARTA */
@@ -169,7 +165,6 @@ footer div h6 {
 .container_carta {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "Nav_bar"
     "carta_s1"
@@ -178,52 +173,68 @@ footer div h6 {
     "carta_s4"
     "carta_s5"
     "carta_s6"
+    "menu_move"
     "footer";
 }
 
 .Nav_bar {
   grid-area: Nav_bar;
-  }
+}
 
-.carta_s1 { 
+.carta_s1 {
   grid-area: carta_s1;
 }
 
-.carta_s2 { 
-  grid-area: carta_s2; 
-  /* background-color: aqua; */
+.carta_s2 {
+  grid-area: carta_s2;
+  
 }
 
-.carta_s3 { 
-  grid-area: carta_s3; 
+.carta_s3 {
+  grid-area: carta_s3;
 }
 
-.carta_s4 { 
-  grid-area: carta_s4; 
+.carta_s4 {
+  grid-area: carta_s4;
 }
 
-.carta_s5 { 
-  grid-area: carta_s5; 
+.carta_s5 {
+  grid-area: carta_s5;
 }
 
-.carta_s6 { 
-  grid-area: carta_s6; 
+.carta_s6 {
+  grid-area: carta_s6;
 }
 
-.footer { 
-  grid-area: footer; 
+.footer {
+  grid-area: footer;
 }
+/* Botones flotantes */
+.menu_move {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: grid;
+}
+
 
 h2, h4 {
-  font-family: 'Seaweed Script', cursive;
-font-size: 2.5rem;}
-  
+  font-family: "Seaweed Script", cursive;
+  font-size: 2.5rem;
+}
 
+h5 {
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-left: solid 10px;
+  border-color: aquamarine;
+  background-color: rgba(127, 229, 255, 0.5);
+}
 .bg_shadow {
-  background-color: #0d0d0dba;
+  background-color: #0d0d0ddf;
   border-radius: 15px;
   margin: 5px;
-
 }
 .Nav_bar {
   height: 50%;
@@ -236,6 +247,204 @@ font-size: 2.5rem;}
   list-style: none;
 }
 
-.info_detail{
+.info_detail {
+  margin-top: -15px;
   color: rgba(200, 200, 200, 0.598);
-} 
+}
+/* Destop carta */
+@media (min-width: 1024px) {
+  .ge1{grid-area: ge1;}
+  .ge2{grid-area: ge2;}
+  .ge3{grid-area: ge3;}
+  .grid_empanada{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 155px 1fr;
+    grid-template-areas:
+    "ge3 ge3"
+    "ge1 ge2" ; 
+  }
+  .gp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    "gp1 gp2" ; 
+  }
+  #header {
+    height: 20vw;
+    width: 100vw;
+    grid-area: header;
+  }
+ 
+  .menu_move {
+    display: none;
+  }
+  .container_carta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 0.5fr 0.5fr 0fr ;
+    grid-template-areas:
+    "header header header header"
+    "carta_s1 carta_s1 carta_s2 carta_s6"
+    "carta_s3 carta_s4 carta_s5 carta_s5"
+    "footer footer footer footer";
+    justify-content: center;
+  }
+  .footer {
+    height: 100px;
+  }
+
+  } 
+/* STYLE SUGERENCIAS */
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e5e5e5;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Css Contacto */
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e5e5e5;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+/* CSS GALERIA */
+
+.gallery-item {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.description-btn:hover {
+  opacity: 1;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.gallery-item:hover .description {
+  opacity: 1;
+}

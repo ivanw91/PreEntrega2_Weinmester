@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -48,35 +50,42 @@
                 </div>
             </div>
         </nav>
-        <h2 class="bg_shadow text_menu">Contacto</h2>
     </header>
     <main class=".container-fluid">
-        <div class=".container col-6 mb-3 d-flex bg_shadow text_menu">
-            <label for="exampleFormControlTextarea1" class="form-label bg_shadow text_menu">Tu E-mail</label>
-            <textarea class="form-control  bg_shadow text_menu" id="exampleFormControlTextarea1" rows="3">Tu E-mail</textarea>
-        </div>  
-        <div class=".container col-6 mb-3 d-flex  bg_shadow text_menu">
-            <label for="exampleFormControlTextarea1" class="form-label  bg_shadow text_menu">Tu telefono</label>
-            <textarea class="form-control  bg_shadow text_menu" id="exampleFormControlTextarea1" rows="3">000-000-000</textarea>
-        </div>
-        <div class=".container col-6 mb-3 d-flex bg_shadow text_menu">
-            <label for="exampleFormControlTextarea1" class="form-label bg_shadow text_menu">Tu mensaje</label>
-            <textarea class="form-control bg_shadow text_menu" id="exampleFormControlTextarea1" rows="3">Tu consulta</textarea>
-        </div>
+        <form action="#" method="post">
+            <h2>Contacto</h2>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+
     </main>
     <footer class="footer">
         <div class="socialn">
-            <a href="https://www.facebook.com"><img class="sn_icon" src="../img/Facebook.png"
-                    alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img class="sn_icon" src="../img/instagram.png"
-                    alt="instagram"></a>
+            <a href="https://www.facebook.com"><img class="sn_icon" src="../img/Facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img class="sn_icon" src="../img/instagram.png" alt="instagram"></a>
         </div>
         <div>
             <h6>© 2023 by Ivan Weinmester. All rights reserved.</h6>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
