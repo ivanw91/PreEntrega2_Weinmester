@@ -39,11 +39,7 @@ body {
 }
 /* Navbar */
 
-@media (min-width: 1000px){
-  .navbar-expand-lg {
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  }}
+
 .nav-link {
   text-align: center;
   margin: 5px;
@@ -159,7 +155,7 @@ footer div h6 {
   margin: 15px;
   height: 45px;
 }
-/* RESPONSIVE DESKTOP */
+/* RESPONSIVE INDEX DESKTOP */
 
 @media (min-width: 1030px) {
   .horarios {grid-area: horarios;}
@@ -231,12 +227,13 @@ h4 {
   font-size: 2.5rem;
 }
 h5 {
-  color: white;
+  color: white black;;
   padding: 10px;
+   ;
   margin: 10px;
   border-left: solid 10px;
   border-color: aquamarine;
-  background-color: rgba(127, 229, 255, 0.5);
+  background-color: rgba(127, 229, 255, 0.774);
 }
 .bg_shadow {
   background-color: #0d0d0ddf;
@@ -262,7 +259,7 @@ h5 {
   margin-top: -15px;
   color: rgba(200, 200, 200, 0.598);
 }
-/* Destop carta */
+/* CARTA DESKTOP */
 @media (min-width: 1030px) {
   .ge1 {
     grid-area: ge1;
@@ -276,7 +273,7 @@ h5 {
   .grid_empanada {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 155px 1fr;
+    grid-template-rows: 205px 1fr;
     grid-template-areas:
       "ge3 ge3"
       "ge1 ge2";
@@ -307,7 +304,28 @@ h5 {
   .footer {
     height: 100px;
   }
+  section#C_1,
+  section#C_2,
+  section#C_3,
+  section#C_4,
+  section#C_5,
+  section#C_6 {
+  background-color: rgba(255, 255, 255, 0.377);
+  border-radius: 10px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  }
 }
+@media (min-width: 1000px){
+  .navbar-expand-lg {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  }}
+
 /* STYLE SUGERENCIAS */
 /* Formulario */
 form {
