@@ -162,6 +162,9 @@ footer div h6 {
 /* RESPONSIVE DESKTOP */
 
 @media (min-width: 1030px) {
+  .horarios {grid-area: horarios;}
+
+  .escribenos{grid-area: escribenos;}
   .grid_area2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
