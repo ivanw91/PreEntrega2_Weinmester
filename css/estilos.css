@@ -28,6 +28,17 @@ body {
   grid-area: section_3;
 }
 
+
+.horarios {grid-area: horarios;}
+
+.escribenos{grid-area: escribenos;}
+
+.map_place {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-area: map;}
+
 /* Navbar */
 
 .container-fluid.flex-row-reverse {
@@ -60,8 +71,8 @@ a {
 /* Flex */
 .d-flex {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 /* Style text */
 p {
@@ -92,9 +103,15 @@ ul {
 }
 /* Reserva */
 div.escribenos {
+  display: flex;
+  direction: row;
+  justify-items: stretch;
   background-color: white;
   border-radius: 25px;
   margin: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 /* Boton reserva */
 div.escribenos div a {
@@ -116,9 +133,7 @@ div.escribenos p {
   font-size: 45px;
   text-align: center;
 }
-section {
-  /* width: 100vw; */
-}
+
 /* Contenedor img wsp reserva */
 img.logo_reserva {
   margin-top: 14px;
@@ -152,10 +167,14 @@ footer div h6 {
   height: 45px;
 }
 
-@media (min-width: 768px) {
-  .navbar-brand {
-    height: 50%;
-    width: 50%;
+@media (min-width: 1024px) {
+  .grid_area2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "horarios map"
+  "escribenos map";
   }
 
 }
@@ -276,7 +295,7 @@ h5 {
     width: 100vw;
     grid-area: header;
   }
- 
+
   .menu_move {
     display: none;
   }
@@ -361,14 +380,6 @@ h2 {
   text-align: center;
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
 
 input[type="text"],
 input[type="email"],
